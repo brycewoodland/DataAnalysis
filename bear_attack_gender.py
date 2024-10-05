@@ -41,5 +41,3 @@ female_victims_percentage = (len(female_victims) / total_victims) * 100
 
 print(f"Percentage of bear attacks on males: {male_victims_percentage:.2f}%")
 print(f"Percentage of bear attacks on females: {female_victims_percentage:.2f}%")
-
-

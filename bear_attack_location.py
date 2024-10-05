@@ -107,3 +107,46 @@ print(f"Total number of victims attacked while at the zoo: {len(zoo_victims)}")
 
 # Display the total number of victims attacked while camping, hiking, fishing, picnicking, biking, running, skiing, climbing, and hunting.
 print(f"Total number of victims attacked while camping, hiking, fishing, picnicking, biking, running, skiing, climbing, and hunting: {total_victims}")
+
+# Find the percentage of victims attacked while camping
+camping_percentage = (len(camping_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while hiking
+hiking_percentage = (len(hiking_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while fishing
+fishing_percentage = (len(fishing_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while picnicking
+picnic_percentage = (len(picnic_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while biking
+biking_percentage = (len(biking_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while running
+running_percentage = (len(running_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while skiing
+skiing_percentage = (len(skiing_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while climbing
+climbing_percentage = (len(climbing_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while hunting
+hunting_percentage = (len(hunting_victims) / total_victims) * 100
+
+# Find the percentage of victims attacked while at the zoo
+zoo_percentage = (len(zoo_victims) / total_victims) * 100
+
+# Display the percentage of victims attacked while camping, hiking, fishing, picnicking, biking, running, skiing, climbing, hunting, zoo.
+print(f"Percentage of victims attacked while camping: {camping_percentage:.2f}%")
+print(f"Percentage of victims attacked while hiking: {hiking_percentage:.2f}%")
+print(f"Percentage of victims attacked while fishing: {fishing_percentage:.2f}%")
+print(f"Percentage of victims attacked while picnicking: {picnic_percentage:.2f}%")
+print(f"Percentage of victims attacked while biking: {biking_percentage:.2f}%")
+print(f"Percentage of victims attacked while running: {running_percentage:.2f}%")
+print(f"Percentage of victims attacked while skiing: {skiing_percentage:.2f}%")
+print(f"Percentage of victims attacked while climbing: {climbing_percentage:.2f}%")
+print(f"Percentage of victims attacked while hunting: {hunting_percentage:.2f}%")
+print(f"Percentage of victims attacked while at the zoo: {zoo_percentage:.2f}%")
+

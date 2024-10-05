@@ -13,6 +13,9 @@ bear_attacks_cleaned = bear_attacks.drop_duplicates()
 # Remove rows with missing values.
 bear_attacks_cleaned = bear_attacks_cleaned.dropna(subset=['age'])
 
+# Sort the dataset by age.
+bear_attacks_sorted = bear_attacks_cleaned.sort_values(by='age')
+
 # Filter through victims 0 - 18 years old.
 young_victims = bear_attacks[bear_attacks['age'] <= 25]
 
@@ -34,13 +37,19 @@ print(f"Total number of victims age 26 to 50: {len(adult_victims)}")
 # Display the total number of elderly victims.
 print(f"Total number of victims age 51 and older: {len(elderly_victims)}")
 
-# # Histogram of bear attacks by age.
-# bear_attacks['age'].plot(kind='hist', bins=10, color='blue', edgecolor='black')
+# Calculate the average age of bear attack victims.
+average_age = bear_attacks['age'].mean()
 
-# # Add labels and title.
-# plt.xlabel('Age')
-# plt.ylabel('Number of Victims')
-# plt.title('Distribution of Bear Attacks by Age')
+# Display the average age of bear attack victims.
+print(f"Average age of bear attack victims: {average_age:.2f}")
 
-# # Display the histogram.
-# plt.show()
+# Histogram of bear attacks by age.
+bear_attacks_sorted['age'].plot(kind='hist', bins=10, color='blue', edgecolor='black')
+
+# Add labels and title.
+plt.xlabel('Age')
+plt.ylabel('Number of Victims')
+plt.title('Distribution of Bear Attacks by Age')
+
+# Display the histogram.
+plt.show()
