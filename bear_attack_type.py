@@ -3,6 +3,9 @@ import pandas as pd
 # Load the data into a DataFrame
 data = pd.read_csv('bear_attack_data.csv')
 
+# Strip data of trailing whitespace
+data = data.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
+
 # Clean the data: remove rows with missing values in relevant columns
 data_cleaned = data.dropna(subset=['Year', 'Type of bear'])
 
