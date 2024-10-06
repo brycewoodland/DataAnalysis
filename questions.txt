@@ -1,0 +1,12 @@
+Questions about Bear Attack dataset:
+
+1.	How have bear attacks varied over the years? Are there any noticeable trends?
+2.	What is the distribution of ages among the victims?
+3.	Are certain age groups more susceptible to bear attacks?
+4.	Is there a difference in attack rates between genders?
+5.	Which locations report the most bear attacks?
+6.	Is there a correlation between attack types (wild vs. captive) and location?
+7.	What types of bears are most involved in attacks?
+8.	Are certain bear types more associated with types of victims (e.g., age or gender)?
+9.	Are there specific months when attacks are more frequent?
+10.	What are the most common circumstances or descriptions surrounding the attacks?
